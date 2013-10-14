@@ -25,6 +25,9 @@
 		85E24A97180C62ED00C27E95 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E24A72180C62ED00C27E95 /* CoreData.framework */; };
 		85E24A9F180C62ED00C27E95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E24A9D180C62ED00C27E95 /* InfoPlist.strings */; };
 		85E24AA1180C62ED00C27E95 /* MBDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E24AA0180C62ED00C27E95 /* MBDatabaseTests.m */; };
+		85E24AAC180C630C00C27E95 /* MBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E24AAB180C630C00C27E95 /* MBDatabase.m */; };
+		85E24AAF180C633000C27E95 /* MBCurrentContextProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E24AAE180C633000C27E95 /* MBCurrentContextProvider.m */; };
+		85E24AB2180C655700C27E95 /* MBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E24AB1180C655700C27E95 /* MBCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		85E24A9C180C62ED00C27E95 /* MBDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBDatabaseTests-Info.plist"; sourceTree = "<group>"; };
 		85E24A9E180C62ED00C27E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85E24AA0180C62ED00C27E95 /* MBDatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDatabaseTests.m; sourceTree = "<group>"; };
+		85E24AAA180C630C00C27E95 /* MBDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDatabase.h; sourceTree = "<group>"; };
+		85E24AAB180C630C00C27E95 /* MBDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDatabase.m; sourceTree = "<group>"; };
+		85E24AAD180C633000C27E95 /* MBCurrentContextProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCurrentContextProvider.h; sourceTree = "<group>"; };
+		85E24AAE180C633000C27E95 /* MBCurrentContextProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCurrentContextProvider.m; sourceTree = "<group>"; };
+		85E24AB0180C655700C27E95 /* MBCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCoreDataStack.h; sourceTree = "<group>"; };
+		85E24AB1180C655700C27E95 /* MBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,10 @@
 		85E24A60180C62ED00C27E95 = {
 			isa = PBXGroup;
 			children = (
+				85E24AB0180C655700C27E95 /* MBCoreDataStack.h */,
+				85E24AB1180C655700C27E95 /* MBCoreDataStack.m */,
+				85E24AAD180C633000C27E95 /* MBCurrentContextProvider.h */,
+				85E24AAE180C633000C27E95 /* MBCurrentContextProvider.m */,
 				85E24A74180C62ED00C27E95 /* MBDatabase */,
 				85E24A9A180C62ED00C27E95 /* MBDatabaseTests */,
 				85E24A6B180C62ED00C27E95 /* Frameworks */,
@@ -133,6 +146,8 @@
 				85E24A8C180C62ED00C27E95 /* Images.xcassets */,
 				85E24A83180C62ED00C27E95 /* MBDatabase.xcdatamodeld */,
 				85E24A75180C62ED00C27E95 /* Supporting Files */,
+				85E24AAA180C630C00C27E95 /* MBDatabase.h */,
+				85E24AAB180C630C00C27E95 /* MBDatabase.m */,
 			);
 			path = MBDatabase;
 			sourceTree = "<group>";
@@ -267,8 +282,11 @@
 				85E24A7B180C62ED00C27E95 /* main.m in Sources */,
 				85E24A88180C62ED00C27E95 /* MBMasterViewController.m in Sources */,
 				85E24A85180C62ED00C27E95 /* MBDatabase.xcdatamodeld in Sources */,
+				85E24AAC180C630C00C27E95 /* MBDatabase.m in Sources */,
+				85E24AB2180C655700C27E95 /* MBCoreDataStack.m in Sources */,
 				85E24A8B180C62ED00C27E95 /* MBDetailViewController.m in Sources */,
 				85E24A7F180C62ED00C27E95 /* MBAppDelegate.m in Sources */,
+				85E24AAF180C633000C27E95 /* MBCurrentContextProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
