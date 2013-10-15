@@ -28,20 +28,6 @@
     return self;
 }
 
-- (void)setDefaultManagedObjectContext:(NSManagedObjectContext*)aDefaultManagedObjectContext
-{
-    @synchronized(self) {
-        defaultManagedObjectContext = aDefaultManagedObjectContext;
-    }
-}
-
-- (NSManagedObjectContext*)defaultManagedObjectContext
-{
-    @synchronized(self) {
-        return defaultManagedObjectContext;
-    }
-}
-
 - (NSManagedObjectContext*)contextForCurrentThread
 {
     if ([NSThread isMainThread])

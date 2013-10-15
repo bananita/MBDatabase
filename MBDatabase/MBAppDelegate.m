@@ -21,9 +21,9 @@
     MBMasterViewController *controller = (MBMasterViewController *)navigationController.topViewController;
 
     MBDatabase* database = [[MBDatabase alloc] initWithDataModelName:@"MBDatabase"];
-    
+        
     NSLog(@"database created");
-    controller.managedObjectContext = [database context];
+    controller.database = database;
     return YES;
 }
 							

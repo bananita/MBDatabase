@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>492E99C9-44E5-462E-A191-879BA0C4B268</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MBDatabase</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22E5B1A7-2B89-4E41-BBCF-593F0B671944</key>
+		<string>ssh://github.com/bananita/MBDatabase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MBDatabase.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22E5B1A7-2B89-4E41-BBCF-593F0B671944</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/bananita/MBDatabase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22E5B1A7-2B89-4E41-BBCF-593F0B671944</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22E5B1A7-2B89-4E41-BBCF-593F0B671944</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MBDatabase</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -21,6 +21,8 @@
 
 - (id)initWithDataModelName:(NSString*)aDataModelName
 {
+    NSAssert([NSThread isMainThread], @"You have to create a database on the main thread");
+    
     self = [super init];
     
     if (!self)
