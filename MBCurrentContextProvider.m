@@ -8,6 +8,8 @@
 
 #import "MBCurrentContextProvider.h"
 
+static const NSString* kManagedObjectContextForThread;
+
 @interface MBCurrentContextProvider ()
 {
     NSManagedObjectContext* __weak defaultManagedObjectContext;
@@ -35,29 +37,21 @@
     
 	else
 	{
-		NSMutableDictionary *threadDict = [[NSThread currentThread] threadDictionary];
-		NSManagedObjectContext *threadContext = [threadDict objectForKey:@"thread's managed object context"];
-		if (threadContext == nil)
-		{
-			threadContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        NSManagedObjectContext *threadContext;
+        
+        NSMutableDictionary* threadDictionary = [[NSThread currentThread] threadDictionary];
+        threadContext = threadDictionary[kManagedObjectContextForThread];
+        
+        if (!threadContext)
+        {
+            threadContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
             threadContext.parentContext = defaultManagedObjectContext;
-            threadContext.retainsRegisteredObjects = YES;
-			[threadDict setObject:threadContext forKey:@"thread's managed object context"];
-		}
+            
+            threadDictionary[kManagedObjectContextForThread] = threadContext;
+        }
+        
 		return threadContext;
 	}
 }
-
-- (void)saveContextAndParent
-{
-//    NSError* error;
-//    [self save:&error];
-//    
-//    [self.parentContext performBlockAndWait:^{
-//        [self.parentContext saveContextAndParent];
-//    }];
-}
-
-
 
 @end

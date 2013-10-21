@@ -14,6 +14,5 @@
 
 - (NSManagedObjectContext*)contextForCurrentThread;
 
-- (void)saveContextAndParent;
 
 @end

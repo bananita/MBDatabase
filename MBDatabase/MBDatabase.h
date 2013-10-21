@@ -14,4 +14,6 @@
 
 - (id)context;
 
+- (void)save;
+
 @end

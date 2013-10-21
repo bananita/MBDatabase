@@ -9,6 +9,7 @@
 #import "MBDatabase.h"
 #import "MBCoreDataStack.h"
 #import "MBCurrentContextProvider.h"
+#import "NSManagedObjectContext+MBSaveContextAndParent.h"
 
 @interface MBDatabase ()
 {
@@ -38,6 +39,11 @@
 - (id)context
 {
     return [currentContextProvider contextForCurrentThread];
+}
+
+- (void)save
+{
+    [[currentContextProvider contextForCurrentThread] saveContextAndParent];
 }
 
 @end

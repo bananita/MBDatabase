@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852D6C9E180D2E15001747DC /* NSManagedObjectContext+MBSaveContextAndParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D6C9D180D2E14001747DC /* NSManagedObjectContext+MBSaveContextAndParent.m */; };
 		85E24A6D180C62ED00C27E95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E24A6C180C62ED00C27E95 /* Foundation.framework */; };
 		85E24A6F180C62ED00C27E95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E24A6E180C62ED00C27E95 /* CoreGraphics.framework */; };
 		85E24A71180C62ED00C27E95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E24A70180C62ED00C27E95 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852D6C9C180D2E14001747DC /* NSManagedObjectContext+MBSaveContextAndParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MBSaveContextAndParent.h"; sourceTree = "<group>"; };
+		852D6C9D180D2E14001747DC /* NSManagedObjectContext+MBSaveContextAndParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MBSaveContextAndParent.m"; sourceTree = "<group>"; };
 		85E24A69180C62ED00C27E95 /* MBDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E24A6C180C62ED00C27E95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85E24A6E180C62ED00C27E95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +104,8 @@
 		85E24A60180C62ED00C27E95 = {
 			isa = PBXGroup;
 			children = (
+				852D6C9C180D2E14001747DC /* NSManagedObjectContext+MBSaveContextAndParent.h */,
+				852D6C9D180D2E14001747DC /* NSManagedObjectContext+MBSaveContextAndParent.m */,
 				85E24AB0180C655700C27E95 /* MBCoreDataStack.h */,
 				85E24AB1180C655700C27E95 /* MBCoreDataStack.m */,
 				85E24AAD180C633000C27E95 /* MBCurrentContextProvider.h */,
@@ -286,6 +291,7 @@
 				85E24AB2180C655700C27E95 /* MBCoreDataStack.m in Sources */,
 				85E24A8B180C62ED00C27E95 /* MBDetailViewController.m in Sources */,
 				85E24A7F180C62ED00C27E95 /* MBAppDelegate.m in Sources */,
+				852D6C9E180D2E15001747DC /* NSManagedObjectContext+MBSaveContextAndParent.m in Sources */,
 				85E24AAF180C633000C27E95 /* MBCurrentContextProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +501,7 @@
 				85E24AA6180C62ED00C27E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85E24AA7180C62ED00C27E95 /* Build configuration list for PBXNativeTarget "MBDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				85E24AA9180C62ED00C27E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
